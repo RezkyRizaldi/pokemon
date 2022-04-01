@@ -277,11 +277,11 @@ export const animate = () => {
 };
 
 let lastKey = '';
-let clicked = false;
+let playing = false;
 addEventListener('keydown', (e) => {
-	if (!clicked) {
+	if (!playing) {
 		audio.map.play();
-		clicked = true;
+		playing = true;
 	}
 
 	switch (e.key) {
