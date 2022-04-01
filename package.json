@@ -1,0 +1,35 @@
+{
+	"name": "pokemon",
+	"displayName": "Pokemon Game",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --watch"
+	},
+	"keywords": [
+		"pokemon",
+		"javascript-game",
+		"canvas-game"
+	],
+	"author": "Chris Courses",
+	"homepage": "https://github.com/RezkyRizaldi/pokemon",
+	"bugs": {
+		"url": "https://github.com/RezkyRizaldi/pokemon/issues",
+		"email": "rezkyrizaldi30@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RezkyRizaldi/pokemon.git"
+	},
+	"license": "MIT",
+	"description": "A Pokemon-like Game with JavaScript.",
+	"readme": "https://github.com/RezkyRizaldi/pokemon#readme",
+	"preview": true,
+	"publisher": "Muhamad Rezky Rizaldi",
+	"markdown": "github",
+	"devDependencies": {
+		"prettier": "^2.6.1",
+		"prettier-plugin-tailwindcss": "^0.1.8",
+		"tailwindcss": "^3.0.23"
+	}
+}

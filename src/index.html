@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokemon</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/dist/style.css" />
+	</head>
+	<body class="bg-black">
+		<div class="relative inline-block">
+			<div id="overlapElement" class="pointer-events-none absolute inset-0 z-10 bg-black opacity-0"></div>
+			<canvas></canvas>
+			<div id="userInterface" class="hidden">
+				<div class="absolute top-12 left-12 w-64 rounded border-4 border-black bg-white p-3 shadow-lg">
+					<h1>Draggle</h1>
+					<div class="relative">
+						<div class="mt-2 h-1 bg-gray-500"></div>
+						<div id="enemyHealthBar" class="absolute top-0 left-0 right-0 h-1 bg-green-500"></div>
+					</div>
+					<span id="enemyHealthPoint">100</span>
+				</div>
+				<div class="absolute top-80 right-12 w-64 rounded border-4 border-black bg-white p-3 shadow-lg">
+					<h1>Emby</h1>
+					<div class="relative">
+						<div class="mt-2 h-1 bg-gray-500"></div>
+						<div id="playerHealthBar" class="absolute top-0 left-0 right-0 h-1 bg-green-500"></div>
+					</div>
+					<span id="playerHealthPoint">100</span>
+				</div>
+				<div class="absolute bottom-0 left-0 right-0 flex h-36 border-t-4 border-t-black bg-white">
+					<div id="dialogueBox" class="absolute inset-0 hidden cursor-pointer bg-white p-3"></div>
+					<div id="attacksBox" class="grid w-2/3 grid-cols-2"></div>
+					<div class="flex w-1/3 items-center justify-center border-l-4 border-l-black">
+						<h1 id="attackType" class="text-center">Choose Your<br />Attack Type</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+			integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"
+			integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script type="module" src="assets/js/index.js"></script>
+	</body>
+</html>
